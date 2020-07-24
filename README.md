@@ -40,13 +40,16 @@ Function for median
             else:
                 median1=s[l//2]
          return median1
-In [97]:
-#Exaample
-list1=[6,8,3,4,5,1]
-m=median1(list1)
-m
-Out[97]:
-4.5
+Exaample
+
+    list1=[6,8,3,4,5,1]
+    m=median1(list1)
+    m
+
+output
+
+    4.5
+    
 3. Mode
 In [98]:
 #function for mode
