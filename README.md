@@ -51,26 +51,29 @@ output
     4.5
     
 3. Mode
-In [98]:
-#function for mode
-def mode1(list):
-    s=sorted(list)
-    l1=[]
-    i = 0
-    while i < len(list) : 
-        l1.append(s.count(s[i])) 
-        i += 1
-        d1 = dict(zip(s, l1)) 
-        d2={k for (k,v) in d1.items() if v == max(l1) } 
-    print("Mode(s) is/are :" + str(d2))
-In [99]:
-#example
-l=[11,11,11,2,3,2,2,2,4,5,11,6,8,8,8,8]
-m=mode1(l)
-m
-Mode(s) is/are :{8, 2, 11}
+
+function for mode
+
+    def mode1(list):
+        s=sorted(list)
+        l1=[]
+        i = 0
+        while i < len(list) : 
+            l1.append(s.count(s[i])) 
+            i += 1
+            d1 = dict(zip(s, l1)) 
+            d2={k for (k,v) in d1.items() if v == max(l1) } 
+        print("Mode(s) is/are :" + str(d2))
+
+example
+
+    l=[11,11,11,2,3,2,2,2,4,5,11,6,8,8,8,8]
+    m=mode1(l)
+    m
+    Mode(s) is/are :{8, 2, 11}
+
 4. Variance
-In [100]:
+
 #function for variance
 def variance1(list):
     m=sum(list)/len(list)
