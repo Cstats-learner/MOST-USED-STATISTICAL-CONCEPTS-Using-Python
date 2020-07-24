@@ -1,4 +1,5 @@
 Important and basic Functions of statistics used in data analysis:-
+
 1.Mean
 
 2.Median
