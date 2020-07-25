@@ -9,6 +9,7 @@
 
 ## 1. Mean
 Fucntion for mean 
+
     def mean1(list):
         mean1=sum(list)/len(list)
         return mean1
@@ -22,18 +23,18 @@ Output
 
     2.5
         
-2. Median
+## 2. Median
 
 Function for median
 
-        def median1(list):
-            l=len(list)
-            s=sorted(list)
-            if l % 2 == 0:
-                median1=(s[l//2]+s[l//2 - 1])/2
-            else:
-                median1=s[l//2]
-         return median1
+    def median1(list):
+        l=len(list)
+        s=sorted(list)
+        if l % 2 == 0:
+           median1=(s[l//2]+s[l//2 - 1])/2
+        else:
+           median1=s[l//2]
+    return median1
 Exaample
 
     list1=[6,8,3,4,5,1]
@@ -44,7 +45,7 @@ output
 
     4.5
     
-3. Mode
+## 3. Mode
 
 function for mode
 
@@ -66,28 +67,32 @@ example
     m
     Mode(s) is/are :{8, 2, 11}
 
-4. Variance
+## 4. Variance
 
-#function for variance
-def variance1(list):
-    m=sum(list)/len(list)
-    var= sum((i - m) ** 2 for i in list) / len(list) 
-    print("The variance of list is : " + str(var))
-In [101]:
-#example
-l=[1,2,3]
-v=variance1(l)
-The variance of list is : 0.6666666666666666
-5. Standard Deviation
-In [102]:
-#function for std. dev
-def stdev1(list):
-    m=sum(list)/len(list)
-    var= sum((i - m) ** 2 for i in list) / len(list) 
-    stdev=var**0.5
-    print("The standar deviation  of list is : " + str(stdev))
-In [103]:
-#example
-l=[1,2,3]
-st=stdev1(l)
-The standar deviation  of list is : 0.816496580927726
+function for variance
+
+    def variance1(list):
+        m=sum(list)/len(list)
+        var= sum((i - m) ** 2 for i in list) / len(list) 
+        print("The variance of list is : " + str(var))
+
+example
+    
+    l=[1,2,3]
+    v=variance1(l)
+    The variance of list is : 0.6666666666666666
+## 5. Standard Deviation
+
+function for Standard Deviation
+    
+    def stdev1(list):
+        m=sum(list)/len(list)
+        var= sum((i - m) ** 2 for i in list) / len(list) 
+        stdev=var**0.5
+        print("The standar deviation  of list is : " + str(stdev))
+        
+example
+    
+    l=[1,2,3]
+    st=stdev1(l)
+    The standar deviation  of list is : 0.816496580927726
