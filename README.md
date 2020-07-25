@@ -9,7 +9,6 @@
 
 ## 1. Mean
 Fucntion for mean 
-
     def mean1(list):
         mean1=sum(list)/len(list)
         return mean1
