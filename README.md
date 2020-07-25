@@ -35,7 +35,7 @@ Function for median
         else:
            median1=s[l//2]
     return median1
-Exaample
+Example
 
     list1=[6,8,3,4,5,1]
     m=median1(list1)
@@ -47,7 +47,7 @@ output
     
 ## 3. Mode
 
-function for mode
+Function for mode
 
     def mode1(list):
         s=sorted(list)
@@ -60,30 +60,37 @@ function for mode
             d2={k for (k,v) in d1.items() if v == max(l1) } 
         print("Mode(s) is/are :" + str(d2))
 
-example
+Example
 
     l=[11,11,11,2,3,2,2,2,4,5,11,6,8,8,8,8]
     m=mode1(l)
     m
+
+Output
+
     Mode(s) is/are :{8, 2, 11}
 
 ## 4. Variance
 
-function for variance
+Function for variance
 
     def variance1(list):
         m=sum(list)/len(list)
         var= sum((i - m) ** 2 for i in list) / len(list) 
         print("The variance of list is : " + str(var))
 
-example
+Example
     
     l=[1,2,3]
     v=variance1(l)
+   
+Output
+
     The variance of list is : 0.6666666666666666
+
 ## 5. Standard Deviation
 
-function for Standard Deviation
+Function for Standard Deviation
     
     def stdev1(list):
         m=sum(list)/len(list)
@@ -91,8 +98,11 @@ function for Standard Deviation
         stdev=var**0.5
         print("The standar deviation  of list is : " + str(stdev))
         
-example
+Example
     
     l=[1,2,3]
     st=stdev1(l)
+   
+Output
+
     The standar deviation  of list is : 0.816496580927726
