@@ -1,4 +1,4 @@
-# Important and basic Functions of statistics used in data analysis:-
+# Most Important Functions used for descriptive statistical summary of a dataset:-
 
 1. Mean
 2. Median
